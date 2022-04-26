@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(85, 73, 85);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.busca {
+    display: flex;
+    width: 300px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color:  rgb(58, 51, 58);
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Berkshire Swash', cursive;
+}
+.busca button:hover {
+    background-color: rgb(143, 101, 101);
+}
+
+footer{
+    margin-top: 30px;
+    color: #FFF;
+}
