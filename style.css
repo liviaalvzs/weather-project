@@ -47,7 +47,32 @@ h1 {
     background-color: rgb(143, 101, 101);
 }
 
-footer{
-    margin-top: 30px;
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
     color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+footer {
+    margin-top: 40px;
+    color: #FFF;
+    font-size: 13px;
 }
