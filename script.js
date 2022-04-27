@@ -43,7 +43,7 @@ function showWarning(message){
 function showInfo(json){
     showWarning('')
 
-    document.querySelector('.titulo').innerHTML = `${json.name},${json.country}`; 
+    document.querySelector('.titulo').innerHTML = `${json.name}, ${json.country}`; 
     document.querySelector('.tempInfo').innerHTML = `${json.temp}<sup>°C</sup>`;
     document.querySelector('.ventoInfo').innerHTML = `${json.windSpeed} <span>km/h</span>`;
     
