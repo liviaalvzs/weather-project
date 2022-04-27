@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8ff;
+}
+
+.change-theme{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9c9c9c;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #292929;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #292929;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+.conteudo{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -60px;
+} 
+
+h1 {
+    color: #543d6d;
+    margin: 20px 0;
+    font-size: 70px;
+
+}
+
+.busca {
+    display: flex;
+    width: 300px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color:  #543d6d;
+    color: #f8f8ff;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+.busca button:hover {
+    background-color: #8c66b4;
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #4f415ec0;
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: rgb(180, 175, 175);
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #1c1722d0;
+    font-weight: bold;
+    padding-top: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #1c1722d0;
+    font-weight: bold;
+}

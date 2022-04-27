@@ -1,3 +1,13 @@
+var checkbox = document.querySelector(".change-theme-checkbox");
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    document.querySelector("link[href='light-style.css']").href = "dark-style.css";
+  } else {
+    document.querySelector("link[href='dark-style.css']").href = "light-style.css";
+  }
+});
+
 document.querySelector('.busca').addEventListener('submit', async (event)=> {
     event.preventDefault();
     let input = document.querySelector('#searchInput').value;
@@ -43,7 +53,7 @@ function showInfo(json){
     document.querySelector('.ventoPonto').style.transform = `rotate(${json.windAngle-90}deg)`;
 
     document.querySelector('.resultado').style.display = 'block';
-    
+
 }
 
 function clearInfo(){

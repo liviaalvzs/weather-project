@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="light-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="change-theme">
+        <label class="switch">
+            <input type="checkbox" class="change-theme-checkbox">
+            <span class="slider round"></span>
+          </label>
+    </div>
+    
+
+    <div class="conteudo">
+
     <h1>clima</h1>
 
     <form class="busca">
-        <input type="search" id="searchInput" />
+        <input id="searchInput" />
         <button>buscar</button>
     </form>
 
@@ -40,7 +50,8 @@
     <div class="aviso"></div>
 
     <footer>created by liviaalvzs</footer>
-
+</div>
     <script src="script.js"></script>
+
 </body>
 </html>
