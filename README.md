@@ -1,8 +1,7 @@
-# Projeto Clima ⛈️
+# Weather Project ⛈️
+An interface where, by typing the name of a city, real-time information about temperature and wind is returned, with theme options (light or dark). 
+The project was built using the OpenWeatherMap API.
 
-### Interface onde, ao digitar nome de uma cidade, informações sobre temperatura e o vento, em tempo real, são retornadas. 
-#### Além disso, conta com opções de tema (claro ou escuro). Para a construção do prjeto foi usada a API OpenWeatherMap. 
-
-![projeto final em modo escuro](imagem-final.PNG)
+![final project in dark mode](final-image.PNG)
 
 
